@@ -1,0 +1,11 @@
+{
+  "cards": [
+    {
+      "summary": "High Risk of Medication Noncompliance",
+      "source": {
+        "label": "UCSF Example Static Predict"
+      },
+      "indicator": "info"
+    }
+  ]
+}

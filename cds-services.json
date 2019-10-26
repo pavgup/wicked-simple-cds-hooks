@@ -1,0 +1,23 @@
+{
+  "services": [
+    {
+      "hook": "patient-view",
+      "title": "Static CDS Service Example",
+      "description": "An example of a CDS Service that returns a static set of cards",
+      "id": "static-patient-greeter",
+      "prefetch": {
+        "patientToGreet": "Patient/{{context.patientId}}"
+      }
+    },
+    {
+      "hook": "order-select",
+      "title": "Medication Predict CDS Service",
+      "description": "An example of a CDS Service that simply predicts non-coformance of medication being prescribed",
+      "id": "medication-predict",
+      "prefetch": {
+        "patient": "Patient/{{context.patientId}}",
+        "medications": "MedicationRequest?patient={{context.patientId}}"
+     }
+    }
+  ]
+}
